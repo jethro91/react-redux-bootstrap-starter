@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import LayoutMain from 'layouts/LayoutMain';
-import BreadCrumb from 'components/Breadcrumb';
+import {LayoutMain} from 'layouts';
+import {Breadcrumb} from 'components';
 import { simpleAction } from 'reduxs/simple';
 import { URL_HOME } from 'utils/page-url';
 
@@ -35,7 +35,7 @@ class Home extends Component {
     return (
       <LayoutMain>
         <div className="container-fluid">
-          <BreadCrumb listData={this.breadCrumbListData} />
+          <Breadcrumb listData={this.breadCrumbListData} />
           <button type="button" onClick={() => { props.simpleAction(); }}>Test redux action</button>
           <pre>
             {

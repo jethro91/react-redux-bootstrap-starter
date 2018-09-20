@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect, Link } from 'react-router-dom';
 
-import LayoutBlank from 'layouts/LayoutBlank';
+import {LayoutBlank} from 'layouts';
 import {URL_HOME, URL_NOTFOUND} from 'utils/page-url';
 
 class NotFound404 extends Component {

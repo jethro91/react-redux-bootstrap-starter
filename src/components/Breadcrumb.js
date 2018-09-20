@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {isValidArrayWithContent} from 'utils/typeValidation';
 import { URL_HOME } from 'utils/page-url';
 
 const Breadcrumb = (props)=>{
-  let currentProps = {...props};
+ 
   const defaultProps = {
     listData: [
       {
@@ -13,9 +12,7 @@ const Breadcrumb = (props)=>{
       }
     ]
   };
-  if(!isValidArrayWithContent(currentProps.listData)){
-    currentProps = {...currentProps, ...defaultProps};
-  }
+  const currentProps = {...defaultProps ,...props};
   return(
     <ol className="breadcrumb">
       {currentProps.listData && currentProps.listData.map((data, index, list) =>{

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LayoutMain from 'layouts/LayoutMain';
+import {LayoutMain} from 'layouts';
 import {URL_HOME, URL_PROFILE} from 'utils/page-url';
-import BreadCrumb from 'components/Breadcrumb';
+import {Breadcrumb} from 'components';
 
 
 class Profile extends Component {
@@ -27,7 +27,7 @@ class Profile extends Component {
     return (
       <LayoutMain>
         <div className="container-fluid">
-          <BreadCrumb listData={this.BreadCrumbListData} />
+          <Breadcrumb listData={this.BreadCrumbListData} />
           <h1>Profile</h1>
         </div>
       </LayoutMain>

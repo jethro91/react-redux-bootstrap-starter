@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-
 class LayoutBlank extends Component {
   constructor(props) {
     super(props)

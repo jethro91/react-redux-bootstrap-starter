@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import TopNav from './components/TopNav.js';
-import MainFooter from './components/MainFooter.js';
-import SidebarNav from './components/SidebarNav.js';
+import {TopNav, SidebarNav, MainFooter} from './components';
 
 
 class LayoutMain extends Component {

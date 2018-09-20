@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-// import logo from './logo.svg';
 
-import Home from 'pages/Home';
-import About from 'pages/About';
-import Profile from 'pages/Profile';
-
-import Login from 'pages/Login';
-import NotFound404 from 'pages/NotFound404';
+import {Home, About, Profile, Login, NotFound404} from 'pages';
 
 class App extends Component {
   componentDidMount() {

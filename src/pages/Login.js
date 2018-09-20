@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-import LayoutBlank from 'layouts/LayoutBlank';
+import {LayoutBlank} from 'layouts';
 import {URL_HOME} from 'utils/page-url';
 
 class Login extends Component {
